@@ -5,12 +5,10 @@ def process_data(data):
 
 def concatenate_strings(strings: List[str]) -> str:
     return ''.join(strings)
-
 def display_message(message: str):
     print(message)
-    
 def main():
-    data = process_data("example data")
+    data = process_data("example datagggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg")
     print(data)
     strings = ["hello", "world"]
     concatenated = concatenate_strings(strings)

@@ -39,7 +39,7 @@ def lint_directory(directory, max_line_length, max_args):
                 total_errors += check_line_length(file_path, max_line_length)
                 total_errors += check_function_arguments(file_path, max_args)
 
-                
+
     return total_errors
 
 
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     total_errors = 0
     for directory in args.directories:
         total_errors += lint_directory(directory, args.max_line_length, args.max_args)
-    
+
     if total_errors > 0:
         sys.exit(1)
     else:
