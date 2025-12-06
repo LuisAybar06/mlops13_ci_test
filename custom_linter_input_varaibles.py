@@ -33,10 +33,13 @@ def lint_directory(directory, max_line_length, max_args):
     total_errors = 0
     for root, _, files in os.walk(directory):
         for file in files:
-            if file.endswith('.py'):
+            if file.endswith('.py'):      
                 file_path = os.path.join(root, file)
+
                 total_errors += check_line_length(file_path, max_line_length)
                 total_errors += check_function_arguments(file_path, max_args)
+
+                
     return total_errors
 
 
